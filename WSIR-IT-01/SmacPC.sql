@@ -1,0 +1,16 @@
+SELECT TOP (1000) [id]
+      ,[SRnumber]
+      ,[SRlink]
+      ,[PCname]
+      ,[ip]
+      ,[UserLogin]
+      ,[UserFIO]
+      ,[AdminLogin]
+      ,[AdminFIO]
+      ,[DateAdd]
+      ,[Comment]
+      ,[IncidentType]
+      ,[WorkType]
+  FROM [Itsupport].[dbo].[SmacPC]
+  /*WHERE comment IS NOT NULL*/
+  ORDER BY id DESC
